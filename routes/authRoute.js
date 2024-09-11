@@ -21,11 +21,8 @@ router.post('/login', loginController)
 //FORGOT PASSWORD || POST
 router.post('/ForgotPassword', forgotPasswordController)
 
-
 //FORGOT PASSWORD || GET
 router.get('/ForgotPassword', requireSignIn, (req, res) => {
-
-
     res.status(200).send({
         ok: true,
         role: 1
